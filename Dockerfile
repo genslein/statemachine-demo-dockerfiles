@@ -7,7 +7,7 @@ ENV HOME /root
 ENV TERM xterm-256color
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN locale-gen en_US.UTF-8
+RUN localedef en_US.UTF-8 -i en_US -fUTF-8
 RUN update-locale LANG=en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
