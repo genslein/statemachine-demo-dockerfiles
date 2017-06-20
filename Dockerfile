@@ -7,7 +7,9 @@ ENV HOME /root
 ENV TERM xterm-256color
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV LANG en_US.UTF-8
+ENV LANG='en_US.UTF-8'
+ENV LANGUAGE='en_US:en'
+ENV LC_ALL='en_US.UTF-8'
 CMD ["/bin/bash"]
 
 RUN dpkg-reconfigure -f noninteractive locales
